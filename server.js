@@ -24,8 +24,8 @@ app.use( bodyParser.json());
  app.use(express.static(path.join(__dirname, 'public')));
 
 
-// // log
-// app.use( logger('dev') );
+// log
+app.use( logger('dev') );
 
 
 /*Views*/

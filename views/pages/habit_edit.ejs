@@ -14,18 +14,20 @@
     <div class="container">
 
       <div class="starter-template">
+      <br>
+      <br>
         <h1><%= habitForm.title %></h1>
-        <p class="lead">Use this form to establish a bad habit.</p>
+        <p class="lead">Use this form to establish a bad habit:</p>
         <form class="form-horizontal" action="<%= habitForm.habitURL %>" method="<%= habitForm.submitMethod %>">
         <fieldset>
 
 
         <!-- Text input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="name">Habit Name</label>  
+          <label class="col-md-4 control-label" for="name">Habit Name:</label>  
           <div class="col-md-6">
           <input id="name" name="name" type="text" placeholder="placeholder" class="form-control input-md" required="">
-          <span class="help-block">Please name your bad habit</span>  
+          <span class="help-block">Please name your bad habit in the above field </span>  
           </div>
         </div>
 
@@ -33,7 +35,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="type of bad habit">Habit type:</label>
           <div class="col-md-6">
-            <select id="meat" name="meat" class="form-control">
+            <select id="type" name="type" class="form-control">
               <option value="1">smoking</option>
               <option value="2">coffee</option>
               <option value="3">procrastenating</option>
@@ -46,7 +48,7 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="scale 1-5">Degree of bad habit</label>
+          <label class="col-md-4 control-label" for="scale 1-5">Degree of bad habit:</label>
           <div class="col-md-6">
             <select id="scale 1-5" name="scale 1-5" class="form-control">
               <option value="1">beyond hope</option>
@@ -61,7 +63,7 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="Frequency">How often per day</label>
+          <label class="col-md-4 control-label" for="Frequency">How often per day:</label>
           <div class="col-md-6">
             <select id="Frequency" name="Frequency" class="form-control">
               <option value="0">None</option>
@@ -77,9 +79,10 @@
         
         <!-- Button -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="submit">Submit</label>
+          <label class="col-md-4 control-label" for="submit">Submit:</label>
           <div class="col-md-4">
             <button id="submit" type="submit" class="btn btn-lg btn-success">How bad is it??!!</button>
+            <span class="help-block">Please click button to compile data </span> 
           </div>
         </div>
 
