@@ -36,6 +36,7 @@
           <label class="col-md-4 control-label" for="type of bad habit">Habit type:</label>
           <div class="col-md-6">
             <select id="type" name="type" class="form-control">
+              <option value="0">None</option>
               <option value="1">smoking</option>
               <option value="2">coffee</option>
               <option value="3">procrastenating</option>
@@ -48,9 +49,10 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="scale 1-5">Degree of bad habit:</label>
+          <label class="col-md-4 control-label" for="scale 1-5">Degree:</label>
           <div class="col-md-6">
             <select id="scale 1-5" name="scale 1-5" class="form-control">
+              <option value="0">None</option>
               <option value="1">beyond hope</option>
               <option value="2">pray for me</option>
               <option value="3">I can see the light</option>
@@ -63,9 +65,9 @@
 
         <!-- Select Basic -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="Frequency">How often per day:</label>
+          <label class="col-md-4 control-label" for="Frequency">Daily Frequency:</label>
           <div class="col-md-6">
-            <select id="Frequency" name="Frequency" class="form-control">
+            <select id="Frequency" name="frequency" class="form-control">
               <option value="0">None</option>
               <option value="1"> >5</option>
               <option value="2"> >10</option>
@@ -75,13 +77,37 @@
             </select>
           </div>
         </div>
+        
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="extras">Years of slacking:</label>
+          <div class="col-md-4">
+          <div class="checkbox">
+            <label for="extras-0">
+              <input type="checkbox" name="extras" id="extras-0" value="1">
+              1 year
+            </label>
+            <label for="extras-1">
+              <input type="checkbox" name="extras" id="extras-1" value="2">
+              2 years
+            </label>
+            <label for="extras-2">
+              <input type="checkbox" name="extras" id="extras-2" value="3">
+              3 years
+            </label>
+            <label for="extras-3">
+              <input type="checkbox" name="extras" id="extras-3" value="4">
+              4+ years
+            </label>
+          </div>
+          </div>
+        </div>
 
         
         <!-- Button -->
         <div class="form-group">
           <label class="col-md-4 control-label" for="submit">Submit:</label>
           <div class="col-md-4">
-            <button id="submit" type="submit" class="btn btn-lg btn-success">How bad is it??!!</button>
+            <button id="submit" type="submit" class="btn btn-lg btn-success">Good Job!</button>
             <span class="help-block">Please click button to compile data </span> 
           </div>
         </div>
