@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ../partials/header %>
+  </head>
+​
+  <body>
+​
+    <header>
+      <%- include ../partials/nav %>
+    </header>
+​
+    <div class="container">
+​
+      <div class="starter-template">
+        <h1>Habit Profile</h1>
+        
+        <h3><%= habitData.name %></h3>
+        <form method="POST" action="<%=habitURL + '?_method=DELETE' %>">
+        <a href="<%=habitURL + '/edit'%>" class="btn btn-info" role="button">Edit</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+  
+
+      </div>
+​
+    </div><!-- /.container -->
+​
+​
+    <%- include ../partials/footer %>
+  </body>
+</html>

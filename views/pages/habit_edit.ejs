@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ../partials/header %>
+  </head>
+
+  <body>
+    <header>
+      <%- include ../partials/nav %>
+    </header>
+    <main>
+      
+    
+    <div class="container">
+
+      <div class="starter-template">
+        <h1><%= habitForm.title %></h1>
+        <p class="lead">Use this form to establish a bad habit.</p>
+        <form class="form-horizontal" action="<%= habitForm.habitURL %>" method="<%= habitForm.submitMethod %>">
+        <fieldset>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Habit Name</label>  
+          <div class="col-md-6">
+          <input id="name" name="name" type="text" placeholder="placeholder" class="form-control input-md" required="">
+          <span class="help-block">Please name your bad habit</span>  
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="type of bad habit">Habit type:</label>
+          <div class="col-md-6">
+            <select id="meat" name="meat" class="form-control">
+              <option value="1">smoking</option>
+              <option value="2">coffee</option>
+              <option value="3">procrastenating</option>
+              <option value="4">snacking</option>
+              <option value="5">TV</option>
+              <option value="6">Over spending</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="scale 1-5">Degree of bad habit</label>
+          <div class="col-md-6">
+            <select id="scale 1-5" name="scale 1-5" class="form-control">
+              <option value="1">beyond hope</option>
+              <option value="2">pray for me</option>
+              <option value="3">I can see the light</option>
+              <option value="4">baby steps</option>
+              <option value="5">I'm running!</option>
+              <option value="6">Crushed it!</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="Frequency">How often per day</label>
+          <div class="col-md-6">
+            <select id="Frequency" name="Frequency" class="form-control">
+              <option value="0">None</option>
+              <option value="1"> >5</option>
+              <option value="2"> >10</option>
+              <option value="3"> >20</option>
+              <option value="4"> >40</option>
+              <option value="5"> >80</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="submit">Submit</label>
+          <div class="col-md-4">
+            <button id="submit" type="submit" class="btn btn-lg btn-success">How bad is it??!!</button>
+          </div>
+        </div>
+
+        </fieldset>
+        </form>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+
+    </main>
+
+
+
+    <%- include ../partials/footer %>
+    
+  </body>
+</html>
