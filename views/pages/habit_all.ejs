@@ -29,7 +29,7 @@
                 <a href="/habits/<%= data[i].id %>"> 
                   <h3><li type="disc"><%= data[i].name %></li></h3>
                 </a>
-
+                <li type="square"><%= data[i].user_name %></li>
                 <li type="square"><%= data[i].type %></li>
                 <li type="square"><%= data[i].scale %></li>
                 <li type="square"><%= data[i].frequency %></li>
@@ -37,6 +37,10 @@
                 <li type="square"><%= data[i].comments %></li>
               </ul>
              
+            
+             <button type="submit" class="btn btn-info">Update</button>
+             <button type="submit" class="btn btn-success">Crushed!</button>
+             <button type="submit" class="btn btn-warning">Warning</button>
 
                
           <% } %>
