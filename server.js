@@ -2,7 +2,7 @@
 
 var path       = require('path');
 var express    = require('express');
-//var favicon    = require('serve-favicon');
+
 var bodyParser = require('body-parser');
 //var methodOverride = require('method-override');
 var logger     = require('morgan');
@@ -38,7 +38,7 @@ app.get('/', (req,res)=>res.render('pages/home'))
 
 
 // Habits
-app.use( '/habit', habitRoutes)
+app.use( '/habits', habitRoutes)
 
 app.listen(port,()=> 
   console.log('Server Up!', port,'//', new Date())

@@ -37,12 +37,15 @@
           <div class="col-md-6">
             <select id="type" name="type" class="form-control">
               <option value="0">None</option>
-              <option value="1">smoking</option>
-              <option value="2">coffee</option>
-              <option value="3">procrastenating</option>
-              <option value="4">snacking</option>
-              <option value="5">TV</option>
-              <option value="6">Over spending</option>
+              <option value="smoking">smoking</option>
+              <option value="coffee">coffee</option>
+              <option value="procrastenating">procrastenating</option>
+              <option value="snacking">snacking</option>
+              <option value="TV">TV</option>
+              <option value="Over spending">Over spending</option>
+              <option value="sodium products">sodium products</option>
+              <option value="Candies and Sugar">candies </option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
@@ -51,14 +54,14 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="scale 1-5">Degree:</label>
           <div class="col-md-6">
-            <select id="scale 1-5" name="scale 1-5" class="form-control">
+            <select id="scale" name="scale" class="form-control">
               <option value="0">None</option>
-              <option value="1">beyond hope</option>
-              <option value="2">pray for me</option>
-              <option value="3">I can see the light</option>
-              <option value="4">baby steps</option>
-              <option value="5">I'm running!</option>
-              <option value="6">Crushed it!</option>
+              <option value="beyond hope">beyond hope</option>
+              <option value="pray for me">pray for me</option>
+              <option value="I can see the light">I can see the light</option>
+              <option value="baby steps">baby steps</option>
+              <option value="I'm running!">I'm running!</option>
+              <option value="Crushed it!">Crushed it!</option>
             </select>
           </div>
         </div>
@@ -69,11 +72,11 @@
           <div class="col-md-6">
             <select id="Frequency" name="frequency" class="form-control">
               <option value="0">None</option>
-              <option value="1"> >5</option>
-              <option value="2"> >10</option>
-              <option value="3"> >20</option>
-              <option value="4"> >40</option>
-              <option value="5"> >80</option>
+              <option value=">5/day"> >5</option>
+              <option value=">10/day"> >10</option>
+              <option value=">20/day"> >20</option>
+              <option value=">40/day"> >40</option>
+              <option value=">80/day"> >80</option>
             </select>
           </div>
         </div>
@@ -83,31 +86,39 @@
           <div class="col-md-4">
           <div class="checkbox">
             <label for="extras-0">
-              <input type="checkbox" name="extras" id="extras-0" value="1">
+              <input type="checkbox" name="extras" id="extras-0" value="1 year..">
               1 year
             </label>
             <label for="extras-1">
-              <input type="checkbox" name="extras" id="extras-1" value="2">
+              <input type="checkbox" name="extras" id="extras-1" value="2 years..">
               2 years
             </label>
             <label for="extras-2">
-              <input type="checkbox" name="extras" id="extras-2" value="3">
+              <input type="checkbox" name="extras" id="extras-2" value="3 years..">
               3 years
             </label>
             <label for="extras-3">
-              <input type="checkbox" name="extras" id="extras-3" value="4">
+              <input type="checkbox" name="extras" id="extras-3" value="4 plus!">
               4+ years
             </label>
           </div>
           </div>
         </div>
 
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="comments">Comments:</label>  
+          <div class="col-md-6">
+          <input id="comments" name="comments" type="text" placeholder="enter text" class="form-control input-md" required="">
+          <span class="help-block">You may add comments and update in the future. </span>  
+          </div>
+        </div>
+                  
         
         <!-- Button -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="submit">Submit:</label>
-          <div class="col-md-4">
-            <button id="submit" type="submit" class="btn btn-lg btn-success">Create</button>
+          <label class="col-md-5 control-label" for="submit">Submit:</label>
+          <div class="col-md-5">
+            <button id="submit" type="submit" class="btn btn-lg btn-success">Create!</button>
             <span class="help-block">Please click button to compile data. </span> 
           </div>
         </div>
@@ -117,9 +128,13 @@
 
       </div>
 
+
+
+            
+
     </div><!-- /.container -->
 
-
+   
 
     </main>
 
